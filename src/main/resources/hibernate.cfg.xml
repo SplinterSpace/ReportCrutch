@@ -4,6 +4,11 @@
   <session-factory>
     <property name="hibernate.connection.driver_class">org.h2.Driver</property>
     <property name="hibernate.connection.url">jdbc:h2:mem:test</property>
-    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.username">Spl</property>
+    <property name="hibernate.connection.password">2025</property>
+
+    <!-- дальше отсебятина-->
+    <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+    <!-- далее можно прописывать mapping classes-->
   </session-factory>
 </hibernate-configuration>
