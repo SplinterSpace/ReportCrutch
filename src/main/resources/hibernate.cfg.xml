@@ -3,12 +3,15 @@
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.connection.driver_class">org.h2.Driver</property>
-    <property name="hibernate.connection.url">jdbc:h2:mem:test</property>
+    <property name="hibernate.connection.url">jdbc:h2:file://C:\JAVA\H2\CrunchTest\CrunchTest</property>
     <property name="hibernate.connection.username">Spl</property>
     <property name="hibernate.connection.password">2025</property>
 
     <!-- дальше отсебятина-->
+    <property name="hibernate.show_sql">true</property>
     <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+    <property name="hbm2ddl.auto">update</property> <!--вроде не должно создавать базу, а только записывать-->
     <!-- далее можно прописывать mapping classes-->
+    <mapping resource="Post.cfg.xml" />
   </session-factory>
 </hibernate-configuration>

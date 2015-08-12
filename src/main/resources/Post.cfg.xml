@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.spl.reportcrutch.Post" table="POST">
+        <id name="id" column="ID">
+            <generator class="native" /> <!-- генерация первичного ключа-->            
+        </id>
+        <property name="name" column="NAME" type="String"/>
+    </class>
+</hibernate-mapping>
